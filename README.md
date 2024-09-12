@@ -29,6 +29,12 @@ composer update
 composer update divulgueregional/api-banrisul 1.0.0
 ```
 
+<b>Remover </b>
+
+```bash
+composer remove divulgueregional/api-banrisul
+```
+
 ## Documentação:
 
 Acesse a pasta docs e leia o README.md para mais detalhes.
