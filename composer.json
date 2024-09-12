@@ -3,7 +3,7 @@
     "description": "API para integração com o Banrisul",
     "autoload": {
         "psr-4": {
-            "Banrisul\\ApiBanrisul\\": "src/"
+            "Divulgueregional\\ApiBanrisul\\": "src/"
         }
     },
     "authors": [
