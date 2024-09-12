@@ -71,7 +71,7 @@ Acesse a pasta docs e leia o README.md para mais detalhes.
 - Solicitar devolução. (Falta fazer)
 - Consultar devolução. (Falta fazer)
 
-<b>PIX-webhook</b><br>
+<b>PIX-WEBHOOK</b><br>
 
 - Configurar um webhook para notificação de PIX recebido, para uma chave DICT do recebedor. (Falta fazer)
 - Consultar o webhook cadastrado para uma chave DICT do recebedor. (Falta fazer)
