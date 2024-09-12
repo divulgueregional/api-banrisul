@@ -15,4 +15,9 @@ class BanrisulApi
             $this->urls = 'https://mtls-api-h.banrisul.com.br';
         }
     }
+
+    public function teste()
+    {
+        return 123;
+    }
 }
