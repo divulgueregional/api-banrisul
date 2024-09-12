@@ -1,6 +1,6 @@
 <?php
 
-namespace Divulgueregional\apibanrisul;
+namespace Divulgueregional\ApiBanrisul;
 
 class BanrisulApi
 {

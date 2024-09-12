@@ -25,9 +25,9 @@ class ComposerStaticInit445e7c93e6a37987e437575edd752c8a
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
-        'B' => 
+        'D' => 
         array (
-            'Banrisul\\ApiBanrisul\\' => 21,
+            'Divulgueregional\\ApiBanrisul\\' => 29,
         ),
     );
 
@@ -52,7 +52,7 @@ class ComposerStaticInit445e7c93e6a37987e437575edd752c8a
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Banrisul\\ApiBanrisul\\' => 
+        'Divulgueregional\\ApiBanrisul\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
