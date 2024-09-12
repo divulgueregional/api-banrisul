@@ -1,0 +1,19 @@
+{
+    "name": "divulgueregional/api-banrisul",
+    "description": "API para integração com o Banrisul",
+    "autoload": {
+        "psr-4": {
+            "Banrisul\\ApiBanrisul\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "divulgueregional",
+            "email": "roseno@divulgueregional.com.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "7.0"
+    }
+}
