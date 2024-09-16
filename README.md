@@ -26,7 +26,7 @@ composer update
 <b>Ou para atualizar para uma versão específica (última tag): </b>
 
 ```bash
-composer update divulgueregional/api-banrisul 1.0.3
+composer update divulgueregional/api-banrisul 1.0.4
 ```
 
 <b>Remover </b>
