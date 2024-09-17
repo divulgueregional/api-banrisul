@@ -12,8 +12,8 @@ require_once '../../vendor/autoload.php';
 use Divulgueregional\ApiBanrisul\ApiBanrisul;
 
 $config = [
-    "CLIENT_ID" => 'l79ed82e84df794382a060fe403d1d5d14',
-    "CLIENT_SECRET" => '6d6acba5ab9a4be690050d1a3607e6bd',
+    "CLIENT_ID" => '', // obrigatorio
+    "CLIENT_SECRET" => '', // obrigatorio
     "CERTIFICADO" => __DIR__ . '/certificado.pem',
     "CHAVE_PRIVADA" => __DIR__ . '/chave_privada_sem_senha.pem',
     "TOKEN" => '',
@@ -39,7 +39,7 @@ print_r($response);
 - consultar um webHook.
 
 ```bash
-$chave_pix = '';// chave pix criada no Banrisul
+$chave_pix = '';// obrigatorio - chave pix criada no Banrisul
 $response = $api->getWebhook($chave_pix);
 echo '<pre>';
 print_r($response);
