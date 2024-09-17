@@ -55,3 +55,18 @@ $response = $api->deleteWebhook($chave_pix);
 echo '<pre>';
 print_r($response);
 ```
+
+**Gravar**
+
+- gravar os dados recebidos.
+
+```bash
+$Post_Recebe = trim(file_get_contents('php://input'));
+
+//gravando na pasta um arquivo log com o retorno
+$aleatorio = rand(1, 500);
+$dataHora = date('Y-m-d H:s:i');
+$fp = fopen("banrisul{$aleatorio}_gravado.log", "a+");
+fwrite($fp, $Post_Recebe);
+fclose($fp);
+```
