@@ -19,7 +19,7 @@ $config = [
     "TOKEN" => '',
 ];
 
-$api = new ApiBanrisul($config, $tpAmb = 2);
+$api = new ApiBanrisul($config, $tpAmb = 2);// produção: retire $tpAmb = 2
 ```
 
 **Criar**
