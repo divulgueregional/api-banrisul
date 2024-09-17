@@ -26,7 +26,7 @@ $dadosPix = [
     "devedorCpf" => null,
 ];
 
-$api = new ApiBanrisul($config, $tpAmb = 2);// produção retire $tpAmb = 2
+$api = new ApiBanrisul($config, $tpAmb = 2);// produção: retire $tpAmb = 2
 $response = $api->cob($dadosPix);
 echo '<pre>';
 print_r($response);
