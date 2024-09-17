@@ -9,7 +9,7 @@ O ambiente já está configurado para produção, para usar em homologação dev
 
 **endpoints da API-PIX:**
 
-- Cob: Gerar um pix.
+- cob: Gerar um pix.
 - getCob: Consultar um pix.
-- QRCode: gerar QRCode ou copia e cola.
+- QRCode: colocar um QRCode na tela.
 - getWebhook: receber notificação de transação pix.
