@@ -4,7 +4,7 @@
 
 API-PIX Banrisul necessita que seja gerado um token.
 
-**Ler o arquivo .pfx e extrair o certificado e chave privada:**
+**Para onter o token:**
 
 ```bash
 require_once '../../vendor/autoload.php';
