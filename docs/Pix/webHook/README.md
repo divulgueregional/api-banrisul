@@ -3,7 +3,7 @@
 ## Introdução
 
 Receber notificação via webhoob, para isso precisa criar um webHook.<br>
-webHook tem 3 endpoint, criar, consultar e deletar.<br>
+webHook tem 3 endpoint: criar, consultar e deletar.<br>
 
 **ChamarApi**
 
