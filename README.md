@@ -26,7 +26,7 @@ composer update
 <b>Ou para atualizar para uma versão específica (última tag): </b>
 
 ```bash
-composer update divulgueregional/api-banrisul 1.0.4
+composer update divulgueregional/api-banrisul 1.0.5
 ```
 
 <b>Remover </b>
@@ -51,16 +51,17 @@ Acesse a pasta docs e leia o README.md para mais detalhes.
 <!-- - Criar uma cobrança para pagamento imediato informando o TXID. (Falta fazer) -->
 
 - Criar uma cobrança para pagamento imediato, com geração automática do TXID
-- Alterar ou remover uma cobrança para pagamento imediato. (Falta fazer)
-- Recuperar os dados de uma cobrança para pagamento imediato. (Falta fazer)
-- Consultar lista de cobranças imediatas. (Falta fazer)
+- Recuperar os dados de uma cobrança para pagamento imediato.
+- Gerar QRCode.
+- WebHook: criar, consultar e excluir.
+  <!-- - Consulta de lista de PIX Recebidos -->
+  <!-- - Alterar ou remover uma cobrança para pagamento imediato. (Falta fazer) -->
 
 <b>TESTAR APLICAÇÃO</b><br>
 
 ```bash
 require_once '../../vendor/autoload.php';
 use Divulgueregional\ApiBanrisul\ApiBanrisul;
-
 
 $api = new ApiBanrisul();
 $response = $api->teste();

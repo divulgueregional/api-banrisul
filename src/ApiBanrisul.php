@@ -152,6 +152,112 @@ class ApiBanrisul
         }
     }
 
+    public function listarPixRecebido($txid)
+    {
+        try {
+            $response = $this->client->request(
+                'GET',
+                "/pix/api-mtls/pix?inicio=2024-09-01T00:00:00Z&fim=2024-09-30T23:59:59Z",
+                [
+                    'headers' => [
+                        'Accept' => 'application/json',
+                        'Content-Type' => 'application/json',
+                        'Authorization' => "Bearer {$this->token}", // Utilizando Bearer Token
+                    ],
+                    'cert' => $this->config['CERTIFICADO'], // Caminho para o certificado
+                    'ssl_key' => $this->config['CHAVE_PRIVADA'], // Caminho para a chave privada (sem senha)
+                    'verify' => false, // Verificar se necessário
+                ]
+            );
+            $retorno = json_decode($response->getBody()->getContents());
+            return $retorno; // Aqui você retorna o resultado da cobrança
+        } catch (\Exception $e) {
+            return new Exception("Falha ao buscar Pix: {$e->getMessage()}");
+        }
+    }
+
+    #################################################
+    ###### FIM - PIX ################################
+    #################################################
+
+    #################################################
+    ###### WEBHOOK ##################################
+    #################################################
+    public function webhook($chave_pix, $webhookUrl)
+    {
+        try {
+            $response = $this->client->request(
+                'PUT',
+                "/pix/api-mtls/webhook/{$chave_pix}",
+                [
+                    'headers' => [
+                        'Accept' => 'application/json',
+                        'Content-Type' => 'application/json',
+                        'Authorization' => "Bearer {$this->token}", // Utilizando Bearer Token
+                    ],
+                    'cert' => $this->config['CERTIFICADO'], // Caminho para o certificado
+                    'ssl_key' => $this->config['CHAVE_PRIVADA'], // Caminho para a chave privada (sem senha)
+                    'verify' => false, // Verificar se necessário
+                    'json' => [
+                        'webhookUrl' => $webhookUrl,
+                    ],
+                ]
+            );
+            $retorno = json_decode($response->getBody()->getContents());
+            return $retorno; // Aqui você retorna o resultado da cobrança
+        } catch (\Exception $e) {
+            return new Exception("Falha ao criar webhook: {$e->getMessage()}");
+        }
+    }
+
+    public function getWebhook($chave_pix)
+    {
+        try {
+            $response = $this->client->request(
+                'GET',
+                "/pix/api-mtls/webhook/{$chave_pix}",
+                [
+                    'headers' => [
+                        'Accept' => 'application/json',
+                        'Content-Type' => 'application/json',
+                        'Authorization' => "Bearer {$this->token}", // Utilizando Bearer Token
+                    ],
+                    'cert' => $this->config['CERTIFICADO'], // Caminho para o certificado
+                    'ssl_key' => $this->config['CHAVE_PRIVADA'], // Caminho para a chave privada (sem senha)
+                    'verify' => false, // Verificar se necessário
+                ]
+            );
+            $retorno = json_decode($response->getBody()->getContents());
+            return $retorno; // Aqui você retorna o resultado da cobrança
+        } catch (\Exception $e) {
+            return new Exception("Falha ao buscar webhook: {$e->getMessage()}");
+        }
+    }
+
+    public function deleteWebhook($chave_pix)
+    {
+        try {
+            $response = $this->client->request(
+                'DELETE',
+                "/pix/api-mtls/webhook/{$chave_pix}",
+                [
+                    'headers' => [
+                        'Accept' => 'application/json',
+                        'Content-Type' => 'application/json',
+                        'Authorization' => "Bearer {$this->token}", // Utilizando Bearer Token
+                    ],
+                    'cert' => $this->config['CERTIFICADO'], // Caminho para o certificado
+                    'ssl_key' => $this->config['CHAVE_PRIVADA'], // Caminho para a chave privada (sem senha)
+                    'verify' => false, // Verificar se necessário
+                ]
+            );
+            $retorno = json_decode($response->getBody()->getContents());
+            return $retorno; // Aqui você retorna o resultado da cobrança
+        } catch (\Exception $e) {
+            return new Exception("Falha ao deletar webhook: {$e->getMessage()}");
+        }
+    }
+
     #################################################
     ###### TESTE ####################################
     #################################################
