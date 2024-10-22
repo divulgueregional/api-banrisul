@@ -51,7 +51,10 @@ O nome do .pfx (PFX_ApiPix_Desenv.pfx) é de escolha do cliente.<br>
 5- O arquivo .pfx deverá ser usado na aplicação da API do Banrisul para gerar o pix.<br>
 Gere os 2 arquivos .pem<br><br>
 
-Na documentação tem códigos em php para gerar todos os certificados, caso não queira gerar pelo terminal.
+Na documentação tem códigos em php para gerar todos os certificados, caso não queira gerar pelo terminal.<br>
+
+PDF com instruções:<br>
+[Geração de Arquivo CSR](https://github.com/divulgueregional/api-banrisul/tree/main/docs/Certificado/Geração%20de%20Arquivo%20CSR.pdf "Abrir em nova aba")
 
 ## Gerar Client Client Secret
 
