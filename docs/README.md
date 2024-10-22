@@ -53,7 +53,7 @@ Gere os 2 arquivos .pem<br><br>
 
 Na documentação tem códigos em php para gerar todos os certificados, caso não queira gerar pelo terminal.<br>
 
-PDF com instruções:<br>
+PDF com instruções do Banrisul:
 [Geração de Arquivo CSR](https://github.com/divulgueregional/api-banrisul/tree/main/docs/Geração%20de%20Arquivo%20CSR.pdf "Abrir em nova aba")
 
 ## Gerar Client Client Secret
