@@ -11,7 +11,9 @@ Seguir as etapas:<br>
 - Enviar um e-mail para api@banrisul.com.br colocando no assunto o número do workflow do seu cliente e em anexo colocar o arquivo CSR.txt.<br>
 
 <br>
-5- Receberá um e-mail com o arquivo .pfx. Deverá gerar os 2 arquivos .pem para usar nessa aplicação e gerar o pix<br><br>
+5- Receberá um e-mail com o arquivo .pfx. Deverá gerar os 2 arquivos .pem para usar nessa aplicação e gerar o pix<br>
+
+6- Caso não quiser gerar todos os arquivos manulamente pelo terminal, na pasta docs/Certificado tem em php os códigos para gerar automaticamente todos os arquivos.<br><br>
 
 ## Credenciais: Client_Id e Client_Secret
 
