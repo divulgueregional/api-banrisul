@@ -146,4 +146,4 @@ if (file_exists($pfxFile)) { // Caminho para o arquivo PFX
 }
 ```
 
-Com os arquivos certificado.pem e chave_privada_sem_senha.pem, agora pode usar na aplicação pra gerar o pix.
+Com os arquivos certificado.pem e chave_privada_sem_senha.pem, agora pode usar na aplicação pra gerar o pix. Gere o token para testar se o certificado estão ok, deste que já tenha obtido CLIENT_ID e CLIENT_SECRET
