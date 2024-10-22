@@ -4,7 +4,7 @@
 
 Seguir as etapas:<br>
 1- O Cliente deve ir ao Banrisul pedir o pix a ser integrado no sistema da software House e o cliente deve passa o e-mail da integradora ao Banrisul.<br>
-2- A software House receberá um e-mail com workflow. Cada cliente terá seu Workflow. Esse número é para facilitar o acompanhamento interno do Banrisul.
+2- A software House receberá um e-mail com workflow. Cada cliente terá seu Workflow. Esse número é para facilitar o acompanhamento interno do Banrisul.<br>
 3- Recebendo o workflow enviar um e-mail para api@banrisul.com.br no assunto colocar o número do workflow e em anexo colocar o arquivo no formato .CSR vinculado ao CNPJ do cliente.<br>
 
 Segue os comandos para gerar o CSR utilizando a ferramenta openssl pelo terminal<br>
