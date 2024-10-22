@@ -25,8 +25,6 @@ openssl_pkey_export($privkey, $private_key, $private_key_passphrase);
 
 // Salvando a chave privada no arquivo .pem
 file_put_contents("cert/PrivKey_ApiPix_Desenv.pem", $private_key);
-
-// echo "Chave privada gerada com sucesso no arquivo .pem!";
 ```
 
 ## Certificado .txt
@@ -39,7 +37,7 @@ $config = array(
     'private_key' => "cert/PrivKey_ApiPix_Desenv.pem",
     'csr' => "cert/CSR_ApiPix_Desenv.txt", // nome do arquivo para gerar txt
     'countryName' => 'BR',
-    'commonName' => '99999999999999' // Aqui você coloca o CNPJ
+    'commonName' => '99999999999999' // Aqui você coloca o CNPJ do cliente que vai gerar o pix
 );
 
 // Carrega a chave privada do arquivo .pem (se tiver senha, forneça no segundo parâmetro)
@@ -72,7 +70,7 @@ file_put_contents($config['csr'], $csr);
 
 ## Certificado .pfx
 
-Banrisul enviara um certificado.cer, agora gerar o arquivo .pfx
+Banrisul enviara um certificado ArquivoRecebidoBanrisul.cer, agora pode gerar o arquivo .pfx
 
 ```bash
 // Caminhos dos arquivos de entrada
@@ -147,3 +145,5 @@ if (file_exists($pfxFile)) { // Caminho para o arquivo PFX
     echo json_encode('certificado .pfx não encontrado!');
 }
 ```
+
+Com os arquivos certificado.pem e chave_privada_sem_senha.pem, agora pode usar na aplicação pra gerar o pix.
