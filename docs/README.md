@@ -3,15 +3,15 @@
 ## Introdução
 
 Seguir as etapas:<br>
-1- O Cliente deve ir ao Banrisul pedir o pix a ser integrado no sistema da software House e o cliente deve passa o e-mail da integradora ao Banrisul.<br>
-2- A software House receberá um e-mail com workflow do seu cliente. Cada cliente terá seu Workflow. Esse número é para facilitar o acompanhamento interno do Banrisul.<br>
+1- O Cliente deve ir ao Banrisul pedir o pix a ser integrado no sistema da software House e o cliente deve passa o e-mail da integradora ao Banrisul.<br><br>
+2- A software House receberá um e-mail com workflow do seu cliente. Cada cliente terá seu Workflow. Esse número é para facilitar o acompanhamento interno do Banrisul.<br><br>
 3- PDF com instruções para gerar o arquivo CSR.txt:
 [Geração de Arquivo CSR](https://github.com/divulgueregional/api-banrisul/tree/main/docs/Geração%20de%20Arquivo%20CSR.pdf)<br>
 
 - Enviar um e-mail para api@banrisul.com.br colocando no assunto o número do workflow do seu cliente e em anexo colocar o arquivo CSR.txt.<br>
 
 <br>
-5- Receberá um e-mail com o arquivo .pfx. Deverá gerar os 2 arquivos .pem para usar nessa aplicação e gerar o pix<br>
+5- Receberá um e-mail com o arquivo .pfx. Deverá gerar os 2 arquivos .pem para usar nessa aplicação e gerar o pix<br><br>
 
 6- Caso não quiser gerar todos os arquivos manulamente pelo terminal, na pasta docs/Certificado tem em php os códigos para gerar automaticamente todos os arquivos.<br><br>
 
