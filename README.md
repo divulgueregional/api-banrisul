@@ -43,7 +43,7 @@ Acesse a pasta docs e leia o README.md para mais detalhes.
 
 <b>SEGURANÇA</b><br>
 
-- Gerar certificado .pem através do cerificado .pfx
+- Geraração de 5 arquivos (certificados)
 - Gerar token.
 
 <b>PIX-COB</b><br>
@@ -57,7 +57,7 @@ Acesse a pasta docs e leia o README.md para mais detalhes.
   <!-- - Consulta de lista de PIX Recebidos -->
   <!-- - Alterar ou remover uma cobrança para pagamento imediato. (Falta fazer) -->
 
-<b>TESTAR APLICAÇÃO</b><br>
+<b>TESTAR CONEXAO COM A APLICAÇÃO</b><br>
 
 ```bash
 require_once '../../vendor/autoload.php';
@@ -68,41 +68,6 @@ $response = $api->teste();
 echo '<pre>';
 print_r($response);
 ```
-
-<!-- <b>PIX-COBV</b><br>
-
-- Criar uma cobrança com vencimento. (Falta fazer)
-- Alterar ou remover uma cobrança com vencimento. (Falta fazer)
-- Recuperar os dados de uma cobrança com vencimento. (Falta fazer)
-- Consultar lista de cobranças com vencimento. (Falta fazer) -->
-
-<!-- <b>PIX-LOTECOBV</b><br>
-
-- Criar/Alterar lote de cobranças com vencimento. (Falta fazer)
-- Utilizado para revisar cobranças específicas dentro de um lote de cobranças. (Falta fazer)
-- Consultar um lote específico de cobranças com vencimento. (Falta fazer)
-- Consultar lotes de cobrança com vencimento. (Falta fazer) -->
-
-<!-- <b>PIX-LOC</b><br>
-
-- Criar uma location de payload. (Falta fazer)
-- Recuperar os dados de uma location. (Falta fazer)
-- Consultar locations cadastradas. (Falta fazer)
-- Desvincular uma cobrança de uma location. (Falta fazer) -->
-
-<!-- <b>PIX-PIX</b><br>
-
-- Consultar Pix. (Falta fazer)
-- Consultar Pix recebidos. (Falta fazer)
-- Solicitar devolução. (Falta fazer)
-- Consultar devolução. (Falta fazer) -->
-
-<!-- <b>PIX-WEBHOOK</b><br>
-
-- Configurar um webhook para notificação de PIX recebido, para uma chave DICT do recebedor. (Falta fazer)
-- Consultar o webhook cadastrado para uma chave DICT do recebedor. (Falta fazer)
-- Consultar os webhooks cadastrados para o recebedor. (Falta fazer)
-- Remover o webhook cadastrado para uma chave DICT do recebedor. (Falta fazer) -->
 
 ## Autor:
 
