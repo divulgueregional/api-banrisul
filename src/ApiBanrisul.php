@@ -263,6 +263,6 @@ class ApiBanrisul
     #################################################
     public function teste()
     {
-        return 'Teste OK';
+        return 'Teste OK. API conectado com sucesso.';
     }
 }
